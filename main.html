@@ -1,0 +1,144 @@
+<!--code by Jay Ar Nava-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+    }
+    
+    .cover {
+        height: 180px;
+        width: 360px;
+        margin: 0;
+    }
+    
+    .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .languages {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 40px;
+    }
+    
+    .languages p {
+        font-size: 15px;
+        margin: 5px;
+        color: gray;
+    }
+    
+    .languages span {
+        color: #1877F2;
+    }
+    
+    .log-in {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text,
+    .password {
+        width: 260px;
+        height: 30px;
+        margin-bottom: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid gray;
+    }
+    
+    .text:focus,
+    .password:focus {
+        outline: none;
+    }
+    
+     ::placeholder {
+        font-size: 20px;
+    }
+    
+    .button {
+        width: 275px;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+        background-color: #1877F2;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .log-in a {
+        font-weight: bold;
+        color: #1877F2;
+        padding-bottom: 40px;
+    }
+    
+    .log-in input {
+        font-size: 20px;
+    }
+    
+    .or {
+        font-size: 13px;
+        color: gray;
+        padding-bottom: 40px;
+    }
+    
+    .or:after,
+    .or:before {
+        content: "\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0\0a0";
+        text-decoration: line-through;
+        color: gray;
+    }
+    
+    .create-new-button {
+        height: 30px;
+        background-color: #42B72A;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="contents">
+        <img class="cover" src="Cover.jpg">
+        <div class="languages">
+            <p>Español </p>
+            <p>&#8226;</p>
+            <p>English </p>
+            <p>&#8226;</p>
+            <p><span>More...</span></p>
+        </div>
+
+        <div class="log-in">
+            <input class="text" type="text" name="username" placeholder="Phone or Email">
+            <input class="password" type="password" name="password" placeholder="Password">
+            <button class="button" value="Log In">Log In</button>
+            <a href="#">Forgot password?</a>
+        </div>
+        <span class="or">OR</span>
+        <button class="create-new-button">Create new Facebook account</button>
+    </div>
+</body>
+
+</html>
